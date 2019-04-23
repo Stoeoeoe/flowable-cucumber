@@ -1,0 +1,13 @@
+{
+    "key": "firstForm",
+    "name": "My first form",
+    "fields": [
+        {
+            "id": "country",
+            "name": "Country",
+            "type": "text",
+            "required": true,
+            "placeholder": "empty"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.flowable.testing.cucumbertest.CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 6, Skipped: 5, Time elapsed: 6.706 s <<< FAILURE! - in com.flowable.testing.cucumbertest.CucumberTest
+Then the case is not yet completed(Scenario: All tasks are completed)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: All tasks are completed  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException
+
+And the task 'firstUserTask' is completed with the following form data:(Scenario: The country 'es' was selected in the first form)  Time elapsed: 0.001 s  <<< ERROR!
+org.flowable.common.engine.api.FlowableObjectNotFoundException: no deployed form definition found with id 'firstForm'
+
+Scenario: The country 'es' was selected in the first form  Time elapsed: 0.001 s  <<< ERROR!
+org.flowable.common.engine.api.FlowableObjectNotFoundException: no deployed form definition found with id 'firstForm'
+
+And the task 'firstUserTask' is completed with the outcome 'accept' and the following form data:(Scenario: The country 'ch' was selected in the first form)  Time elapsed: 0.001 s  <<< ERROR!
+org.flowable.common.engine.api.FlowableObjectNotFoundException: no deployed form definition found with id 'firstForm'
+
+Scenario: The country 'ch' was selected in the first form  Time elapsed: 0.001 s  <<< ERROR!
+org.flowable.common.engine.api.FlowableObjectNotFoundException: no deployed form definition found with id 'firstForm'
+
