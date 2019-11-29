@@ -1,12 +1,11 @@
-@Case
+@App
 Feature: App works as expected
   Background:
-    Given an in-memory CMMN engine is running
-    Given an in-memory process engine is running
-    Given an in-memory app engine is running
+    Given an in-memory Process Engine is running
+    Given an in-memory App engine is running
+    Given a user with the id 'admin' exists
 
 
   Scenario: Case and process can be started
-   # Given the app 'apps/simple_app.bar' is deployed
-    #Then the case 'simple_case' can be started by 'admin'
-    #Then the process 'simple_process' can be started by 'admin'
+    Given the app 'apps/simple_app.bar' is deployed
+    Then the process 'app_process' can be started by 'admin'
