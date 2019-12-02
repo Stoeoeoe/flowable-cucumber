@@ -1,156 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a18694a-afda-4e5e-9828-2104a283354a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_199.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/config/CucumberTestConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/FlowableCucumberIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/service/CaseTestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/service/ProcessTestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppBackgroundSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/BackgroundProcessSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/CaseBackgroundSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/CaseSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/FormSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/util/CucumberVariableUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/apps/simple_app.bar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cases/simple_case.cmmn.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.flowable.app.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.flowable.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.flowable.cmmn.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.flowable.dmn.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.flowable.form.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.flowable.idm.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/simple-app.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/simple-case.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/forms/firstForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/processes/simple_process.bpmn20.xml" afterDir="false" />
+    <list default="true" id="7a18694a-afda-4e5e-9828-2104a283354a" name="Default Changelist" comment="Big update">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_owasp_java_html_sanitizer_owasp_java_html_sanitizer_20181114_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_expressions_7_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java8_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_junit_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_spring_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_1_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_dependencies_1_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_gherkin_5_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jodah_typetools_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_masterthought_cucumber_reporting_4_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cucumber_0_0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cucumber_spring_0_0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__velocity_tools_velocity_tools_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowable-cucumber-demo/flowable-cucumber-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowable-cucumber-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowable-cucumber-spring/flowable-cucumber-spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowable-cucumber-spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowable-cucumber/flowable-cucumber.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flowable-cucumber/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flowable-cucumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flowable-cucumber-parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_spring_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open_points.md" beforeDir="false" afterPath="$PROJECT_DIR$/open_points.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/ProcessTestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/steps/BackgroundProcessSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/steps/ProcessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/ProcessSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTestApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/ProcessTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/simple-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/simple-process.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/simple-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/simple-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/FlowableCucumberDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/main/java/org/flowable/testing/demo/FlowableCucumberDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/bdd/example/ConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/main/java/org/flowable/testing/demo/ConsoleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/bdd/example/GreetTaskDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/main/java/org/flowable/testing/demo/GreetTaskDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/config/CucumberTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing/config/CucumberTestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/config/FlowableCucumberProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing/config/FlowableCucumberProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/AppSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/AppSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/CaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/CaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/CucumberContextConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing/glue/CucumberContextConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/EngineSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/EngineSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/FormSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/FormSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/IdentitySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/IdentitySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/MockSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/MockSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/ProcessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/ProcessSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/SpringHooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/glue/TaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/TaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/service/CucumberCaseTestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/service/CucumberCaseTestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/service/CucumberProcessTestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/service/CucumberProcessTestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/service/CucumberRepositoryTestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/service/CucumberRepositoryTestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/util/CucumberVariableUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/util/CucumberVariableUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowable/testing/util/FlowableCucumberConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/util/FlowableCucumberConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/flowable/testing/CucumberFeatureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java/org/flowable/testing/CucumberFeatureRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/flowable/testing/bdd/example/GreetTaskMockDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java/org/flowable/testing/bdd/example/GreetTaskMockDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/apps/simple_app.bar" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/apps/simple_app.bar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cases/simple_case.cmmn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/cases/simple_case.cmmn.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/identities.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/identities.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/message-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/message-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/service-task-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/service-task-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/signal-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/signal-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/simple-app.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/simple-app.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/simple-case.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/simple-case.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/simple-form-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/simple-form-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/timer-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/timer-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/trigger-and-async.feature" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/features/trigger-and-async.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/forms/firstForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/forms/firstForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/global_signal_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/global_signal_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/greet_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/greet_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/greet_process_async.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/greet_process_async.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/identity_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/identity_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/message_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/message_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/signal_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/signal_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/simple_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/simple_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/timer_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/timer_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/processes/trigger_process.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/resources/processes/trigger_process.bpmn20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/apps/simple_app.bar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cases/simple_case.cmmn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/simple-app.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/simple-case.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/forms/firstForm.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/processes/simple_process.bpmn20.xml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/BackgroundProcessSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/simple-process.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/config/CucumberTestConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/Hooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/simple-app.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/simple-case.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/FormSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.flowable.app.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -159,470 +140,83 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>junit</find>
-      <find>start</find>
-      <find>SequenceFlow_1exmw3x</find>
-      <find>country</find>
-      <find>buildFo</find>
-      <find>outcome</find>
-      <find>formSEr</find>
-      <find>FormService</find>
-      <find>deployment</find>
-      <find>tas</find>
-      <find>PotentialStarterParser</find>
-      <find>potentialStarter</find>
-      <find>cmmnEngineConfiguration</find>
-      <find>the task</find>
-      <find>appEn</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/flowable/testing/steps/ProcessSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowable/testing/steps/BackgroundProcessSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber-flowable.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/ProcessTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/FlowableCucumberIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowable/testing/ProcessTestService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTestApplicationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/BackgroundProcessSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/service/ProcessTestService.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/processes/simple_user_task_process.bpmn" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/util/CucumberVariableUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/processes/Simple_Process.bpmn" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/service/CaseTestService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/CaseBackgroundSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.flowable.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.flowable.cmmn.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppBackgroundSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.flowable.dmn.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.flowable.idm.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/FormSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/forms/firstForm.json" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.flowable.form.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/forms/firstForm.form" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/ProcessSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/simple-process.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/CaseSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/simple-case.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.flowable.app.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/config/TestEngineConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/config/TestConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/config/CucumberTestConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/Hooks.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/simple-app.feature" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cucumber-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cucumber-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumbertest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumbertest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="steps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="processes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumbertest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flowable-cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="flowable-engine-6.4.1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="flowable-engine-6.4.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="flowable-engine-6.4.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="flowable-engine-6.4.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="flowable-engine-6.4.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flowable-cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.flowable:flowable-engine:6.4.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="flowable-engine-6.4.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="flowable" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1TbFbT3zfJFh3u5VzK0xzH8UfGS" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555765962230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573716863625" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flowable-cucumber-demo/src/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.flowable.testing" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.flowable.testing.config" />
+      <recent name="com.flowable.testing.util" />
+      <recent name="com.flowable.testing.steps" />
+      <recent name="com.flowable.testing.commons" />
       <recent name="com.flowable.testing.service" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.flowable.testing" />
+      <recent name="com.flowable.testing.glue" />
+      <recent name="com.flowable.testing.steps" />
+      <recent name="com.flowable.testing.bdd" />
+      <recent name="com.flowable.testing.cucumbertest" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dev\Work\flowable-cucumber\src\test\resources" />
-      <recent name="C:\Dev\Work\flowable-cucumber\src\test\resources\apps" />
-      <recent name="C:\Dev\Work\flowable-cucumber\src\test\resources\cases" />
-      <recent name="C:\Dev\Work\flowable-cucumber\src\test\resources\forms" />
-      <recent name="C:\Dev\Work\flowable-cucumber\src\test\resources\processes" />
+      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/test" />
+      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/main/java/org/flowable/testing/demo" />
+      <recent name="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing" />
+      <recent name="$PROJECT_DIR$/flowable-cucumber/src/main/java" />
+      <recent name="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.flowable.testing.glue" />
+      <recent name="org.flowable.testing.demo" />
+      <recent name="com.flowable.testing.service" />
+      <recent name="com.flowable.testing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/test" />
+      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test/resources/processes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -637,46 +231,106 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CucumberTest">
-    <configuration name="CucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flowable-cucumber" />
+  <component name="RunManager" selected="JUnit.CucumberFeatureRunner">
+    <configuration name="Feature: greet-process" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/greet-process.feature" />
+      <option name="GLUE" value="cucumber.api.spring com.flowable.testing.steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="flowable-cucumber-parent" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: greet-process" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.flowable.testing.cucumbertest.*" />
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.flowable.testing.cucumbertest" />
-      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.cucumbertest.CucumberTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flowable-cucumber" />
+    <configuration name="CucumberFeatureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flowable-cucumber-parent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.flowable.testing.steps.*" />
+          <option name="PATTERN" value="com.flowable.testing.glue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.flowable.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.CucumberFeatureRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flowable-cucumber-parent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flowable.testing.bdd.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.flowable.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.CucumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CucumberTestApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flowable-cucumber-parent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flowable.testing.glue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.flowable.testing.bdd" />
+      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.bdd.CucumberTestApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlowableBaseSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flowable-cucumber-parent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flowable.testing.glue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.flowable.testing.steps" />
-      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.steps.ProcessSteps" />
+      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.steps.FlowableBaseSteps" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CucumberTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="flowable-cucumber" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flowable.testing.cucumbertest.CucumberTestApplication" />
+      <module name="flowable-cucumber-parent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flowable.testing.FlowableCucumberDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlowableCucumberDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="flowable-cucumber-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.flowable.testing.demo.FlowableCucumberDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CucumberFeatureRunner" />
+        <item itemvalue="JUnit.FlowableBaseSteps" />
         <item itemvalue="JUnit.CucumberTest" />
-        <item itemvalue="JUnit.ProcessSteps" />
+        <item itemvalue="Cucumber java.Feature: greet-process" />
+        <item itemvalue="JUnit.CucumberTestApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -691,113 +345,60 @@
       <option name="presentableId" value="Default" />
       <updated>1555609364893</updated>
       <workItem from="1555609366411" duration="34360000" />
+      <workItem from="1557496903339" duration="5224000" />
+      <workItem from="1557779171451" duration="594000" />
+      <workItem from="1564583322917" duration="5003000" />
+      <workItem from="1568008366922" duration="2887000" />
+      <workItem from="1568270223900" duration="3629000" />
+      <workItem from="1572349732293" duration="2173000" />
+      <workItem from="1573132929222" duration="52000" />
+      <workItem from="1573644874954" duration="10155000" />
+      <workItem from="1573663541181" duration="2719000" />
+      <workItem from="1573717017534" duration="1625000" />
+      <workItem from="1573720962031" duration="34004000" />
+      <workItem from="1574253324428" duration="73653000" />
+      <workItem from="1574753199627" duration="5683000" />
+      <workItem from="1574761785285" duration="24063000" />
+      <workItem from="1575013769064" duration="5526000" />
+      <workItem from="1575046039303" duration="671000" />
     </task>
+    <task id="LOCAL-00001">
+      <created>1568270486505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568270486505</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="CucumberTest - 2019.04.20 at 14h 56m 34s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 14h 57m 36s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 14h 57m 49s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 14h 58m 21s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 15h 00m 16s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 15h 01m 44s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 15h 02m 54s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 15h 03m 22s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 15h 12m 25s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CucumberTest - 2019.04.20 at 15h 12m 52s.xml">
-      <configuration name="CucumberTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34360000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="0" />
-    <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2400636" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32969603" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Spring" order="6" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.3289166" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.3998441" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.17408586" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24023438" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3298611" />
-      <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.3998441" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="Maven" order="0" weight="0.17408586" />
-      <window_info anchor="right" id="Palette" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout-to-restore>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -805,563 +406,44 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5-sources.jar!/cucumber/runtime/table/TableConverter.java</url>
           <line>236</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/lang/ClassLoader.java</url>
           <line>1306</line>
-          <properties />
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-spring/4.8.0/cucumber-spring-4.8.0.jar!/io/cucumber/spring/SpringFactory.class</url>
+          <line>51</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.8.0/cucumber-core-4.8.0.jar!/cucumber/runtime/formatter/PluginFactory.class</url>
+          <line>169</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/test/mock/MockElResolver.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/test/mock/MockExpressionManager.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/impl/bpmn/behavior/ServiceTaskDelegateExpressionActivityBehavior.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="187" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateCodeFragment">
-      <expression>
-        <expression-string>((AppDeploymentEntityImpl) appDeployment).key</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.app.engine.impl.persistence.entity.AppDeploymentEntityImpl</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((AppDeploymentEntityImpl) appDeployment).deployedArtifacts</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.app.engine.impl.persistence.entity.AppDeploymentEntityImpl</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((AppDeploymentEntityImpl) appDeployment).resources</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.app.engine.impl.persistence.entity.AppDeploymentEntityImpl</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>appRepositoryService.createDeploymentQuery().list().get(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>appRepositoryService.createDeploymentQuery().list()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>appRepositoryService.createDeploymentQuery()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>appRepositoryService.createAppDefinitionQuery().list()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>appRepositoryService.createAppDefinitionQuery().list().get(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositoryService.createProcessDefinitionQuery().list()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>formRepositoryService.createFormDefinitionQuery().formDefinitionKey(task.getFormKey()).singleResult()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>variables</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>taskService.createTaskQuery().list().get(0).getTaskDefinitionKey()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>taskService.createTaskQuery().list().get(0).getId()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>taskService.createTaskQuery().list().get(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>taskService.createTaskQuery().list()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositoryService.createProcessDefinitionQuery().deploymentId(deployment.getId()).singleResult()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.engine.impl.RepositoryServiceImpl</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositoryService.createProcessDefinitionQuery().deploymentId(deployment.getId()).list()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.engine.impl.RepositoryServiceImpl</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositoryService.createProcessDefinitionQuery().deploymentId(&quot;0&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.engine.impl.RepositoryServiceImpl</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositoryService.createProcessDefinitionQuery().deploymentId(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.engine.impl.RepositoryServiceImpl</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>resource</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.flowable.engine.impl.RepositoryServiceImpl</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5-sources.jar!/cucumber/runtime/Runtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="302" selection-start-line="302" selection-end-line="302" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1.jar!/org/flowable/form/engine/impl/FormRepositoryServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#2080#2280#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1.jar!/org/flowable/form/engine/impl/repository/FormDeploymentBuilderImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
-          <folding>
-            <element signature="e#11659#11660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/persistence/entity/EntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/FormEngineConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="549" selection-start-line="549" selection-end-line="549" />
-          <folding>
-            <element signature="e#21507#21508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/util/CommandContextUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/db/AbstractDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#2501#2502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/persistence/entity/AbstractEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#1684#1685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/persistence/entity/FormDeploymentEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/interceptor/DefaultCommandInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/interceptor/TransactionContextInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/interceptor/CommandContextInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/interceptor/LogInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/cfg/CommandExecutorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1947#1948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/FormRepositoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/repository/FormDeploymentBuilderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="151" column="29" lean-forward="true" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
-          <folding>
-            <element signature="e#5486#5487#0" expanded="true" />
-            <element signature="e#5539#5540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/forms/firstForm.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/cmd/DeployCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.flowable.form.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.flowable.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/forms/firstForm.form">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-engine/6.4.1/flowable-form-engine-6.4.1-sources.jar!/org/flowable/form/engine/impl/persistence/deploy/DeploymentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/impl/cmd/NeedsActiveTaskCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#1506#1507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/impl/TaskServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="241" column="52" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="311" column="9" selection-start-line="311" selection-start-column="9" selection-end-line="311" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-task-service/6.4.1/flowable-task-service-6.4.1.jar!/org/flowable/task/service/impl/persistence/entity/TaskEntityImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
-          <folding>
-            <element signature="e#12609#12610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine-common/6.4.1/flowable-engine-common-6.4.1-sources.jar!/org/flowable/common/engine/impl/persistence/entity/AbstractEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#1149#1150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-api/6.4.1/flowable-form-api-6.4.1-sources.jar!/org/flowable/form/api/FormRepositoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-form-api/6.4.1/flowable-form-api-6.4.1.jar!/org/flowable/form/api/FormRepositoryService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/impl/cmd/CompleteTaskWithFormCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cases/simple_case.cmmn.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppBackgroundSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/CaseBackgroundSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/CaseSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/ProcessSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/service/ProcessTestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/service/CaseTestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/FlowableCucumberIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTestApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/cucumbertest/CucumberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.flowable.app.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/AppSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/util/CucumberFlowableHooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/config/CucumberTestConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/FormSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/simple-app.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/simple-case.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/flowable/testing/steps/BackgroundProcessSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/simple-process.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flowable_cucumber$CucumberFeatureRunner.ic" NAME="CucumberFeatureRunner Coverage Results" MODIFIED="1574697944039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.flowable.testing.glue.*</FILTER>
+    </SUITE>
   </component>
 </project>

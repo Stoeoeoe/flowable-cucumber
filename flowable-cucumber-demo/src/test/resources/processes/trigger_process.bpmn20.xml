@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:flowable="http://flowable.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.flowable.org/processdef">
+  <process id="trigger_process" name="Trigger Process" isExecutable="true">
+    <startEvent id="startEvent"></startEvent>
+    <sequenceFlow id="flow1" sourceRef="startEvent" targetRef="serviceTask"></sequenceFlow>
+    <endEvent id="endEvent"></endEvent>
+    <sequenceFlow id="flow2" sourceRef="serviceTask" targetRef="endEvent"></sequenceFlow>
+    <serviceTask id="serviceTask" name="Triggereable Service Task (waits for trigger)" flowable:expression="${true}" flowable:triggerable="true" flowable:async="true" >
+      <extensionElements>
+        <flowable:executionListener event="start" class="org.flowable.testing.bdd.example.ConsoleLogger">
+          <flowable:field name="message">
+            <flowable:string><![CDATA[About to wait for a trigger.]]></flowable:string>
+          </flowable:field>
+        </flowable:executionListener>
+        <flowable:executionListener event="end" class="org.flowable.testing.bdd.example.ConsoleLogger">
+          <flowable:field name="message">
+            <flowable:string><![CDATA[Received trigger, continuing.]]></flowable:string>
+          </flowable:field>
+        </flowable:executionListener>
+      </extensionElements>
+    </serviceTask>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_trigger_process">
+    <bpmndi:BPMNPlane bpmnElement="trigger_process" id="BPMNPlane_trigger_process">
+      <bpmndi:BPMNShape bpmnElement="startEvent" id="BPMNShape_startEvent">
+        <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="163.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endEvent" id="BPMNShape_endEvent">
+        <omgdc:Bounds height="28.0" width="28.0" x="355.0" y="164.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="serviceTask" id="BPMNShape_receiveTask">
+        <omgdc:Bounds height="80.0" width="100.0" x="180.0" y="138.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="129.9499986183554" y="178.0"></omgdi:waypoint>
+        <omgdi:waypoint x="180.0" y="178.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="279.9499999999977" y="178.0"></omgdi:waypoint>
+        <omgdi:waypoint x="355.0" y="178.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
