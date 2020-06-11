@@ -40,7 +40,7 @@ public class EngineSteps implements ApplicationContextAware {
     }
 
     // TODO: This doesn't really do anything :)...
-    @Given("an Process Engine is running")
+    @Given("a Process Engine is running")
     public void anInMemoryProcessEngineIsRunning() {
         Assert.notNull(processEngine, "Process Engine is not running");
     }

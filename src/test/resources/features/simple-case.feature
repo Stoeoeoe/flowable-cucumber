@@ -1,7 +1,7 @@
 @Case
 Feature: Simple case can be completed
   Background:
-    Given anCMMN engine is running
+    Given a CMMN engine is running
 
   Scenario: All tasks are completed
     Given the case 'cases/simple_case.cmmn.xml' is deployed
