@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
+import org.flowable.testing.demo.GreetTaskDelegate;
 import org.springframework.stereotype.Component;
 
 @Component("greetTaskMockDelegate")

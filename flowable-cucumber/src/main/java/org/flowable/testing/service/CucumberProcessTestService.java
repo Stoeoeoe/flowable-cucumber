@@ -55,6 +55,7 @@ public class CucumberProcessTestService {
             throw new RuntimeException("Definition " + key + " of type '" + type + "' does not exist" );
         }
     }
+
     private <T> T getDefinitionFromRepository(String type, String key) {
         T definition = null;
         if(ENGINE_PROCESS.equals(type)) {

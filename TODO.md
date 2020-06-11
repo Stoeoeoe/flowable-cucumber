@@ -1,3 +1,7 @@
+# General
+* Use Assertions 
+* Allow mocks
+
 # BPMN
 * Support for multiple running processes (using business keys?)
 * Support for triggers

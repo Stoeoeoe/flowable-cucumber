@@ -10,18 +10,15 @@ import org.flowable.cmmn.api.repository.CmmnDeployment;
 import org.flowable.common.engine.impl.el.ExpressionManager;
 import org.flowable.dmn.api.DmnDeployment;
 import org.flowable.dmn.api.DmnRepositoryService;
-import org.flowable.engine.HistoryService;
-import org.flowable.engine.IdentityService;
-import org.flowable.engine.ManagementService;
-import org.flowable.engine.RepositoryService;
+import org.flowable.engine.*;
 import org.flowable.engine.history.HistoricProcessInstance;
+import org.flowable.engine.impl.cfg.ProcessEngineConfigurationImpl;
 import org.flowable.engine.impl.test.JobTestHelper;
 import org.flowable.engine.repository.Deployment;
 import org.flowable.engine.test.mock.MockExpressionManager;
 import org.flowable.engine.test.mock.Mocks;
 import org.flowable.idm.api.Group;
 import org.flowable.idm.api.User;
-import org.flowable.spring.SpringProcessEngineConfiguration;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -30,10 +27,8 @@ import io.cucumber.java8.En;
 
 public class Hooks implements En {
 
-    Logger logger = Logger.getLogger(Hooks.class.getName());
-
     // TODO: Only needed to set MockExpressionManager, but probably Spring Users should simply use @MockBean. Then, this could be used with ProcessEngineServiceImpl...
-    private final SpringProcessEngineConfiguration processEngineConfiguration;
+    private final ProcessEngineConfigurationImpl processEngineConfiguration;
 
     private final RepositoryService repositoryService;
     private final CmmnRepositoryService cmmnRepositoryService;
@@ -48,14 +43,14 @@ public class Hooks implements En {
     private final int asyncTimeout;
     private final int asyncInterval;
 
-    public Hooks(SpringProcessEngineConfiguration processEngineConfiguration, RepositoryService repositoryService,
-        CmmnRepositoryService cmmnRepositoryService,
-        AppRepositoryService appRepositoryService, DmnRepositoryService dmnRepositoryService, DmnRepositoryService formRepositoryService,
-        IdentityService identityService, ManagementService managementService,
-        //, TODO: Why doesn't this work? :(
-        //        @Value("${flowable.testing.async-timeout}") int asyncTimeout,
-        //        @Value("${flowable.testing.async-interval}") int asyncInterval
-        HistoryService historyService) {
+    public Hooks(ProcessEngineConfigurationImpl processEngineConfiguration, RepositoryService repositoryService,
+                 CmmnRepositoryService cmmnRepositoryService,
+                 AppRepositoryService appRepositoryService, DmnRepositoryService dmnRepositoryService, DmnRepositoryService formRepositoryService,
+                 IdentityService identityService, ManagementService managementService,
+                 //, TODO: Why doesn't this work? :(
+                 //        @Value("${flowable.testing.async-timeout}") int asyncTimeout,
+                 //        @Value("${flowable.testing.async-interval}") int asyncInterval
+                 HistoryService historyService) {
         this.processEngineConfiguration = processEngineConfiguration;
         this.repositoryService = repositoryService;
         this.cmmnRepositoryService = cmmnRepositoryService;

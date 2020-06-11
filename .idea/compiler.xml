@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flowable-cucumber-demo" />
-        <module name="flowable-cucumber" />
         <module name="flowable-cucumber-spring" />
+        <module name="flowable-cucumber" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="flowable-cucumber" target="1.8" />
+      <module name="flowable-cucumber" target="1.5" />
       <module name="flowable-cucumber-demo" target="1.8" />
-      <module name="flowable-cucumber-parent" target="1.8" />
+      <module name="flowable-cucumber-parent" target="1.5" />
       <module name="flowable-cucumber-spring" target="1.8" />
     </bytecodeTargetLevel>
   </component>

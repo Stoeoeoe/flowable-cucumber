@@ -25,8 +25,6 @@ import io.cucumber.java.en.When;
 
 public class CaseSteps {
 
-    Logger logger = Logger.getLogger(CaseSteps.class.getName());
-
     @Autowired
     private CmmnRuntimeService cmmnRuntimeService;
     @Autowired

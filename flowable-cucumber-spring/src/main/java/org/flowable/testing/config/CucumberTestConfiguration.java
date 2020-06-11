@@ -14,16 +14,24 @@ import org.flowable.form.engine.configurator.FormEngineConfigurator;
 import org.flowable.form.spring.SpringFormEngineConfiguration;
 import org.flowable.spring.SpringProcessEngineConfiguration;
 import org.flowable.spring.boot.EngineConfigurationConfigurer;
+import org.flowable.testing.service.CucumberCaseTestService;
+import org.flowable.testing.service.CucumberProcessTestService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 
-import org.flowable.testing.service.CucumberCaseTestService;
-import org.flowable.testing.service.CucumberProcessTestService;
 
 @SpringBootConfiguration
 public class CucumberTestConfiguration {
 
+    /*
+            public FormEngineConfigurator formEngineConfigurator(SpringFormEngineConfiguration configuration) {
+            SpringFormEngineConfigurator formEngineConfigurator = new SpringFormEngineConfigurator();
+            formEngineConfigurator.setFormEngineConfiguration(configuration);
+            invokeConfigurers(configuration);
+
+            return formEngineConfigurator;
+     */
     @Bean
     public EngineConfigurationConfigurer<SpringProcessEngineConfiguration> testProcessEngineConfiguration(
         @Qualifier("formEngineConfigurator") FormEngineConfigurator formEngineConfigurator) {

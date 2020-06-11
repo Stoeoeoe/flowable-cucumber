@@ -1,11 +1,26 @@
 package org.flowable.testing.glue;
 
-import static org.flowable.testing.util.FlowableCucumberConstants.ENGINE_PROCESS;
-import static java.time.temporal.ChronoUnit.DAYS;
-import static java.time.temporal.ChronoUnit.HOURS;
-import static java.time.temporal.ChronoUnit.MINUTES;
-import static java.time.temporal.ChronoUnit.SECONDS;
-import static org.junit.Assert.assertTrue;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.flowable.common.engine.api.FlowableException;
+import org.flowable.engine.*;
+import org.flowable.engine.history.HistoricProcessInstance;
+import org.flowable.engine.impl.test.JobTestHelper;
+import org.flowable.engine.migration.ActivityMigrationMapping;
+import org.flowable.engine.repository.Deployment;
+import org.flowable.engine.repository.ProcessDefinition;
+import org.flowable.engine.runtime.Execution;
+import org.flowable.engine.runtime.ProcessInstance;
+import org.flowable.form.api.FormRepositoryService;
+import org.flowable.job.api.Job;
+import org.flowable.testing.service.CucumberProcessTestService;
+import org.flowable.testing.util.CucumberVariableUtils;
+import org.flowable.variable.api.history.HistoricVariableInstance;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 
 import java.math.BigInteger;
 import java.time.LocalDate;
@@ -19,40 +34,13 @@ import java.util.Map;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import org.flowable.common.engine.api.FlowableException;
-import org.flowable.engine.DynamicBpmnService;
-import org.flowable.engine.HistoryService;
-import org.flowable.engine.IdentityService;
-import org.flowable.engine.ManagementService;
-import org.flowable.engine.ProcessEngineConfiguration;
-import org.flowable.engine.RepositoryService;
-import org.flowable.engine.RuntimeService;
-import org.flowable.engine.history.HistoricProcessInstance;
-import org.flowable.engine.impl.test.JobTestHelper;
-import org.flowable.engine.migration.ActivityMigrationMapping;
-import org.flowable.engine.migration.ProcessInstanceMigrationBuilder;
-import org.flowable.engine.repository.Deployment;
-import org.flowable.engine.repository.ProcessDefinition;
-import org.flowable.engine.runtime.Execution;
-import org.flowable.engine.runtime.ProcessInstance;
-import org.flowable.form.api.FormRepositoryService;
-import org.flowable.job.api.Job;
-import org.flowable.variable.api.history.HistoricVariableInstance;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
-
-import org.flowable.testing.service.CucumberProcessTestService;
-import org.flowable.testing.util.CucumberVariableUtils;
-
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import static java.time.temporal.ChronoUnit.*;
+import static org.flowable.testing.util.FlowableCucumberConstants.ENGINE_PROCESS;
+import static org.junit.Assert.assertTrue;
 
 public class ProcessSteps {
 
-    Logger logger = Logger.getLogger(ProcessSteps.class.getName());
+//    Logger logger = Logger.getLogger(ProcessSteps.class.getName());
 
     @Autowired
     private RuntimeService runtimeService;
@@ -70,6 +58,8 @@ public class ProcessSteps {
     private ProcessEngineConfiguration processEngineConfiguration;
     @Autowired
     private ManagementService managementService;
+    @Autowired
+    private ProcessMigrationService processMigrationService;
 
     @Given("the process {string} is deployed")
     public void theProcessIsDeployed(String processResource) throws Throwable {
@@ -91,14 +81,38 @@ public class ProcessSteps {
         if(!cucumberProcessTestService.hasDefinition(ENGINE_PROCESS, processDefinition.getKey())) {
             String definitionKey = key != null? key : processDefinition.getKey();
             cucumberProcessTestService.addDefinition(ENGINE_PROCESS, definitionKey, processDefinition);
-            logger.info("Process " + processResource + " deployed as " + definitionKey );
+          //  logger.info("Process " + processResource + " deployed as " + definitionKey );
         }
     }
 
-    @Given("there is a token on the flow element {string}")
-    public void thereIsATokenOnTheFlowElement() {
-        ProcessInstanceMigrationBuilder processInstanceMigrationBuilder;
-        processInstanceMigrationBuilder.addActivityMigrationMapping(new ActivityMigrationMapping.OneToOneMapping())
+    @When("the process {string} is started by {string} with tokens on the following activities:")
+    public void thereIsATokenOnTheFlowElement(String processDefinitionKey, String starter, DataTable dataTable) {
+        List<String> activityIds = dataTable.asList();
+        boolean asyncExecutorActive = processEngineConfiguration.getAsyncExecutor().isActive();
+
+        // Deactivate async executor to make sure that the token remains on the start event.
+        if(asyncExecutorActive) {
+            processEngineConfiguration.setAsyncExecutorActivate(false);
+        }
+
+        identityService.setAuthenticatedUserId(starter);
+        ProcessInstance processInstance = runtimeService.createProcessInstanceBuilder()
+            .processDefinitionKey(processDefinitionKey)
+            .startAsync();
+
+        String startActivityId = runtimeService.createExecutionQuery().processInstanceId(processInstance.getId()).singleResult().getActivityId();
+        ActivityMigrationMapping.OneToManyMapping mapping = new ActivityMigrationMapping.OneToManyMapping(startActivityId, activityIds);
+
+        processMigrationService.createProcessInstanceMigrationBuilder()
+            .addActivityMigrationMapping(mapping)
+            .migrate(processInstance.getId());
+
+        // Start async executor again if the process is to be start asynchronously.
+        if(asyncExecutorActive) {
+            processEngineConfiguration.setAsyncExecutorActivate(true);
+        }
+
+        cucumberProcessTestService.setProcessInstance(processInstance);
     }
 
     @Given("the current date is {string}")

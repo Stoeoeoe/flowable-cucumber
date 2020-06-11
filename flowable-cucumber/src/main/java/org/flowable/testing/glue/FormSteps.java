@@ -12,8 +12,6 @@ import io.cucumber.java8.En;
 
 public class FormSteps  implements En {
 
-    private Logger logger = Logger.getLogger(FormSteps.class.getName());
-
     @Autowired
     private FormRepositoryService formRepositoryService;
 
@@ -25,7 +23,5 @@ public class FormSteps  implements En {
         FormDeployment deployment = this.formRepositoryService.createDeployment()
                 .addClasspathResource(formResource)
                 .deploy();
-
-        logger.info("Deployed form " + formResource);
     }
 }

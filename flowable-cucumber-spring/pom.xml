@@ -2,37 +2,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>cucumber-test</artifactId>
-        <groupId>org.flowable.testing</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.flowable.testing</groupId>
+        <artifactId>flowable-cucumber-parent</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <cucumber.version>6.0.0</cucumber.version>
+    </properties>
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>flowable-cucumber-spring</artifactId>
+    <version>0.0.1</version>
 
     <dependencies>
         <!-- Spring Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+            <version>${spring.boot.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring.boot.version}</version>
             <optional>true</optional>
         </dependency>
 
-        <!-- Cucumber and Gherkin Depdendencies -->
+        <!-- Cucumber and Gherkin Dependencies -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
@@ -49,16 +60,16 @@
             <version>${cucumber.version}</version>
         </dependency>
         <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>4.2.3</version>
+            <groupId>org.flowable.testing</groupId>
+            <artifactId>flowable-cucumber</artifactId>
+            <version>0.0.1</version>
         </dependency>
 
         <!-- Flowable Dependencies -->
         <dependency>
             <groupId>org.flowable</groupId>
             <artifactId>flowable-spring-boot-starter</artifactId>
-            <version>6.4.1</version>
+            <version>${flowable.version}</version>
         </dependency>
         <!-- TODO: Maybe activate through config? -->
         <dependency>
@@ -66,9 +77,8 @@
             <artifactId>flowable-form-engine</artifactId>
             <version>6.4.1</version>
         </dependency>
-
-
     </dependencies>
 
+    <packaging>jar</packaging>
 
 </project>
