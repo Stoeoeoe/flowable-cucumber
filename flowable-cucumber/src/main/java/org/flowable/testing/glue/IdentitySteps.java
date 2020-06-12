@@ -7,14 +7,16 @@ import org.flowable.idm.api.Group;
 import org.flowable.idm.api.User;
 
 import io.cucumber.java.en.Given;
+import org.flowable.testing.service.FlowableServices;
 
 public class IdentitySteps {
 
     private final IdentityService identityService;
 
-    public IdentitySteps(IdentityService identityService) {
-        this.identityService = identityService;
+    public IdentitySteps(FlowableServices flowableServices) {
+        this.identityService = flowableServices.getIdentityService();
     }
+
 
     @Given("a user with the id {string} exists")
     public void aUserWithTheIdExists(String userId) {

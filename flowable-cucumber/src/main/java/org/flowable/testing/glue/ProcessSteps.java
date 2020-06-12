@@ -16,7 +16,9 @@ import org.flowable.engine.runtime.Execution;
 import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.form.api.FormRepositoryService;
 import org.flowable.job.api.Job;
+import org.flowable.testing.service.CucumberCaseTestService;
 import org.flowable.testing.service.CucumberProcessTestService;
+import org.flowable.testing.service.FlowableServices;
 import org.flowable.testing.util.CucumberVariableUtils;
 import org.flowable.variable.api.history.HistoricVariableInstance;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,24 +44,28 @@ public class ProcessSteps {
 
 //    Logger logger = Logger.getLogger(ProcessSteps.class.getName());
 
-    @Autowired
-    private RuntimeService runtimeService;
-    @Autowired
-    private RepositoryService repositoryService;
-    @Autowired
-    private HistoryService historyService;
-    @Autowired
-    private IdentityService identityService;
-    @Autowired
-    private FormRepositoryService formRepositoryService;
-    @Autowired
-    private CucumberProcessTestService cucumberProcessTestService;
-    @Autowired
-    private ProcessEngineConfiguration processEngineConfiguration;
-    @Autowired
-    private ManagementService managementService;
-    @Autowired
-    private ProcessMigrationService processMigrationService;
+    private final RuntimeService runtimeService;
+    private final RepositoryService repositoryService;
+    private final HistoryService historyService;
+    private final IdentityService identityService;
+    private final FormRepositoryService formRepositoryService;
+    private final CucumberProcessTestService cucumberProcessTestService;
+    private final ProcessEngineConfiguration processEngineConfiguration;
+    private final ManagementService managementService;
+    private final ProcessMigrationService processMigrationService;
+
+    public ProcessSteps(FlowableServices flowableServices, CucumberProcessTestService cucumberProcessTestService) {
+        this.cucumberProcessTestService = cucumberProcessTestService;
+
+        this.runtimeService = flowableServices.getRuntimeService();
+        this.repositoryService = flowableServices.getRepositoryService();
+        this.historyService = flowableServices.getHistoryService();
+        this.identityService = flowableServices.getIdentityService();
+        this.formRepositoryService = flowableServices.getFormRepositoryService();
+        this.processEngineConfiguration = flowableServices.getProcessEngineConfiguration();
+        this.managementService = flowableServices.getManagementService();
+        this.processMigrationService = flowableServices.getProcessMigrationService();
+    }
 
     @Given("the process {string} is deployed")
     public void theProcessIsDeployed(String processResource) throws Throwable {
@@ -318,8 +324,8 @@ public class ProcessSteps {
             .collect(Collectors.toList());
         for (String executionId : executionIds) {
             if(async) {
-                runtimeService.triggerAsync(executionId, payload);
-//                JobTestHelper.waitForJobExecutorToProcessAllJobs(processEngineConfiguration, managementService, 10000, 100, true);
+               runtimeService.triggerAsync(executionId, payload);
+               JobTestHelper.waitForJobExecutorToProcessAllJobs(processEngineConfiguration, managementService, 10000, 100, true);
             } else {
                 runtimeService.trigger(executionId, payload);
             }
@@ -398,7 +404,7 @@ public class ProcessSteps {
         return processVariables.get(variableName).toString();
     }
 
-    @When("the async org.flowable.testing.service task {string} is executed")
+    @When("the async service task {string} is executed")
     public void theAsyncServiceTaskServiceTaskIsExecuted(String activityId) {
         theAsyncActivityIsExecuted(activityId);
     }

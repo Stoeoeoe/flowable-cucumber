@@ -14,7 +14,6 @@ Feature: Async and triggering is demonstrated
     Then the process is completed
     And the process variable 'message' is 'Hello admin!'
 
-  #
   Scenario: The async task is executed properly (global async job execution)
     When the process 'greet_process_async' is started by 'admin'
     Then the process is not yet completed
@@ -22,7 +21,6 @@ Feature: Async and triggering is demonstrated
     Then the process is completed
     And the process variable 'message' is 'Hello admin!'
 
-  #
   @Async
   Scenario: The async task is executed properly, all async actions are executed after each step due to the @Async tag
     When the process 'greet_process_async' is started by 'admin'

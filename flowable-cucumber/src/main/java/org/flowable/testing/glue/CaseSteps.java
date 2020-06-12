@@ -15,6 +15,7 @@ import org.flowable.cmmn.model.CmmnModel;
 import org.flowable.common.engine.api.FlowableException;
 import org.flowable.engine.IdentityService;
 import org.flowable.identitylink.api.IdentityLinkType;
+import org.flowable.testing.service.FlowableServices;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.flowable.testing.service.CucumberCaseTestService;
@@ -25,18 +26,23 @@ import io.cucumber.java.en.When;
 
 public class CaseSteps {
 
-    @Autowired
-    private CmmnRuntimeService cmmnRuntimeService;
-    @Autowired
-    private CmmnRepositoryService cmmnRepositoryService;
-    @Autowired
-    private CmmnHistoryService cmmnHistoryService;
-    @Autowired
-    private CucumberCaseTestService cucumberCaseTestService;
-    @Autowired
-    private IdentityService identityService;
-    @Autowired
-    private CmmnTaskService cmmnTaskService;
+    private final CmmnRuntimeService cmmnRuntimeService;
+    private final CmmnRepositoryService cmmnRepositoryService;
+    private final CmmnHistoryService cmmnHistoryService;
+    private final IdentityService identityService;
+    private final CmmnTaskService cmmnTaskService;
+
+    private final CucumberCaseTestService cucumberCaseTestService;
+
+    public CaseSteps(FlowableServices flowableServices, CucumberCaseTestService cucumberCaseTestService) {
+        this.cucumberCaseTestService = cucumberCaseTestService;
+
+        this.cmmnRuntimeService = flowableServices.getCmmnRuntimeService();
+        this.cmmnRepositoryService = flowableServices.getCmmnRepositoryService();
+        this.cmmnHistoryService = flowableServices.getCmmnHistoryService();
+        this.identityService = flowableServices.getIdentityService();
+        this.cmmnTaskService = flowableServices.getCmmnTaskService();
+    }
 
 
     @Given("the case {string} is deployed")

@@ -24,9 +24,10 @@ public class CucumberProcessTestService {
 
     private ProcessInstance processInstance;
 
-    public CucumberProcessTestService(RepositoryService repositoryService, RuntimeService runtimeService) {
-        this.repositoryService = repositoryService;
-        this.runtimeService = runtimeService;
+    public CucumberProcessTestService(FlowableServices flowableServices) {
+
+        this.repositoryService = flowableServices.getRepositoryService();
+        this.runtimeService = flowableServices.getRuntimeService();
     }
 
     public ProcessInstance getProcessInstance() {
@@ -61,6 +62,7 @@ public class CucumberProcessTestService {
         if(ENGINE_PROCESS.equals(type)) {
             definition = (T)repositoryService.createProcessDefinitionQuery().processDefinitionKey(key).latestVersion().singleResult();
         }
+        // TODO: Implement other repos
         return definition;
     }
 

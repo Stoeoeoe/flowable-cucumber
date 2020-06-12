@@ -11,28 +11,27 @@ import org.flowable.form.api.FormRepositoryService;
 import org.flowable.idm.api.Group;
 import org.flowable.task.api.Task;
 import org.flowable.testing.service.CucumberProcessTestService;
+import org.flowable.testing.service.FlowableServices;
 import org.flowable.testing.util.CucumberVariableUtils;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java8.En;
 
 // TODO: Check if historic needed
-public class TaskSteps implements En {
+public class TaskSteps {
 
     private final TaskService taskService;
     private final CucumberProcessTestService cucumberProcessTestService;
     private final FormRepositoryService formRepositoryService;
     private final IdentityService identityService;
 
-    public TaskSteps(TaskService taskService, CucumberProcessTestService cucumberProcessTestService,
-        FormRepositoryService formRepositoryService, IdentityService identityService) {
-        this.taskService = taskService;
+    public TaskSteps(FlowableServices flowableServices, CucumberProcessTestService cucumberProcessTestService) {
+        this.taskService = flowableServices.getTaskService();
         this.cucumberProcessTestService = cucumberProcessTestService;
-        this.formRepositoryService = formRepositoryService;
-        this.identityService = identityService;
+        this.formRepositoryService = flowableServices.getFormRepositoryService();
+        this.identityService = flowableServices.getIdentityService();
     }
 
     @And("the user task {string} is completed")

@@ -1,10 +1,10 @@
 package org.flowable.testing.demo;
 
-import java.util.logging.Logger;
-
 import org.flowable.common.engine.api.delegate.Expression;
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
+
+import java.util.logging.Logger;
 
 public class ConsoleLogger implements JavaDelegate {
 

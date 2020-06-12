@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cmmnEngineConfiguration" class="org.flowable.cmmn.engine.CmmnEngineConfiguration">
+        <property name="jdbcUrl" value="jdbc:h2:mem:flowable;DB_CLOSE_DELAY=1000" />
+        <property name="jdbcDriver" value="org.h2.Driver" />
+        <property name="jdbcUsername" value="sa" />
+        <property name="jdbcPassword" value="" />
+
+        <property name="databaseSchemaUpdate" value="true" />
+        <property name="asyncExecutorActivate" value="false" />
+        <property name="configurators">
+            <list>
+                <ref bean="formEngineConfigurator" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="formEngineConfiguration" class="org.flowable.form.engine.impl.cfg.StandaloneFormEngineConfiguration">
+        <property name="jdbcUrl" value="jdbc:h2:mem:flowable;DB_CLOSE_DELAY=1000" />
+        <property name="jdbcDriver" value="org.h2.Driver" />
+        <property name="jdbcUsername" value="sa" />
+        <property name="jdbcPassword" value="" />
+    </bean>
+
+    <bean id="formEngineConfigurator" class="org.flowable.form.engine.configurator.FormEngineConfigurator">
+        <property name="formEngineConfiguration" ref="formEngineConfiguration" />
+    </bean>
+
+</beans>

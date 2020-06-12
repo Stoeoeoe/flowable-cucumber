@@ -1,22 +1,6 @@
 package org.flowable.testing.config;
 
-import static org.flowable.common.engine.impl.AbstractEngineConfiguration.DB_SCHEMA_UPDATE_FALSE;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.flowable.cmmn.spring.SpringCmmnEngineConfiguration;
-import org.flowable.common.engine.impl.EngineConfigurator;
-import org.flowable.common.engine.impl.util.TestClockImpl;
-import org.flowable.engine.RepositoryService;
-import org.flowable.engine.RuntimeService;
-import org.flowable.form.engine.configurator.FormEngineConfigurator;
-import org.flowable.form.spring.SpringFormEngineConfiguration;
-import org.flowable.spring.SpringProcessEngineConfiguration;
-import org.flowable.spring.boot.EngineConfigurationConfigurer;
 import org.flowable.testing.service.CucumberCaseTestService;
-import org.flowable.testing.service.CucumberProcessTestService;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 
@@ -31,7 +15,6 @@ public class CucumberTestConfiguration {
             invokeConfigurers(configuration);
 
             return formEngineConfigurator;
-     */
     @Bean
     public EngineConfigurationConfigurer<SpringProcessEngineConfiguration> testProcessEngineConfiguration(
         @Qualifier("formEngineConfigurator") FormEngineConfigurator formEngineConfigurator) {
@@ -65,17 +48,20 @@ public class CucumberTestConfiguration {
          //   configuration.setExpressionManager(new MockExpressionManager());
         };
     }
+     */
 
 
     @Bean
     public CucumberCaseTestService cucumberCaseTestService() {
         return new CucumberCaseTestService();
     }
-
+/*
     @Bean
     public CucumberProcessTestService cucumberProcessTestService(RepositoryService repositoryService, RuntimeService runtimeService) {
-        return new CucumberProcessTestService(repositoryService, runtimeService);
+        return new CucumberProcessTestService(Flo);
     }
+
+ */
 
 
 }

@@ -20,8 +20,8 @@ public class CucumberRepositoryTestService {
     private Map<String, DmnDefinition> dmnDefinitionMap = new HashMap<>();
     private Map<String, FormDefinition> formDefinitionMap = new HashMap<>();
 
-    public CucumberRepositoryTestService(RepositoryService repositoryService) {
-        this.repositoryService = repositoryService;
+    public CucumberRepositoryTestService(FlowableServices flowableServices) {
+        this.repositoryService = flowableServices.getRepositoryService();
     }
 
 }

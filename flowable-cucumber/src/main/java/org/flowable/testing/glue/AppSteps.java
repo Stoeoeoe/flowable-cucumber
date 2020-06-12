@@ -7,25 +7,25 @@ import java.util.zip.ZipInputStream;
 
 import org.flowable.app.api.AppRepositoryService;
 import org.flowable.app.api.repository.AppDeployment;
+import org.flowable.testing.service.FlowableServices;
 import org.springframework.core.io.ClassPathResource;
 
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java8.En;
 import org.flowable.testing.service.CucumberProcessTestService;
 
 /**
  * Cucumber Glue responsible for all steps regarding app deployments.
  */
-public class AppSteps implements En {
+public class AppSteps {
 
     Logger logger = Logger.getLogger(AppSteps.class.getName());
 
     private final AppRepositoryService appRepositoryService;
     private final CucumberProcessTestService cucumberProcessTestService;
 
-    public AppSteps(AppRepositoryService appRepositoryService, CucumberProcessTestService cucumberProcessTestService) {
-        this.appRepositoryService = appRepositoryService;
+    public AppSteps(FlowableServices flowableServices, CucumberProcessTestService cucumberProcessTestService) {
+        this.appRepositoryService = flowableServices.getAppRepositoryService();
         this.cucumberProcessTestService = cucumberProcessTestService;
     }
 
@@ -35,6 +35,7 @@ public class AppSteps implements En {
      */
     @Given("the app {string} is deployed")
     public void theAppIsDeployed(String appResource) {
+        // TODO: Replace with non-spring implementation
         ClassPathResource classPathResource = new ClassPathResource(appResource);
         try {
             ZipInputStream zis = new ZipInputStream(classPathResource.getInputStream());

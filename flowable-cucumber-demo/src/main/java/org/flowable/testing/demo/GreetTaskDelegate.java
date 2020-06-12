@@ -1,12 +1,10 @@
 package org.flowable.testing.demo;
 
-import java.util.logging.Logger;
-
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
-import org.springframework.stereotype.Component;
 
-@Component("greetTaskDelegate")
+import java.util.logging.Logger;
+
 public class GreetTaskDelegate implements JavaDelegate {
 
     private final static Logger LOGGER = Logger.getLogger(GreetTaskDelegate.class.getName());

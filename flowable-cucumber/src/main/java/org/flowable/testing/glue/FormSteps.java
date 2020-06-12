@@ -5,18 +5,22 @@ import java.util.logging.Logger;
 import org.flowable.form.api.FormDeployment;
 import org.flowable.form.api.FormRepositoryService;
 import org.flowable.form.api.FormService;
+import org.flowable.testing.service.FlowableServices;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java8.En;
 
-public class FormSteps  implements En {
+public class FormSteps {
 
-    @Autowired
     private FormRepositoryService formRepositoryService;
-
-    @Autowired
     private FormService formService;
+
+
+    public FormSteps(FlowableServices flowableServices) {
+        this.formService = flowableServices.getFormService();
+        this.formRepositoryService = flowableServices.getFormRepositoryService();
+    }
+
 
     @Given("the form {string} is deployed")
     public void theFormIsDeployed(String formResource) {
