@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/flowable-cucumber/flowable-cucumber.iml" filepath="$PROJECT_DIR$/flowable-cucumber/flowable-cucumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/flowable-cucumber-demo/flowable-cucumber-demo.iml" filepath="$PROJECT_DIR$/flowable-cucumber-demo/flowable-cucumber-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/flowable-cucumber-parent.iml" filepath="$PROJECT_DIR$/.idea/flowable-cucumber-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowable-cucumber-demo-spring/flowable-cucumber-demo-spring.iml" filepath="$PROJECT_DIR$/flowable-cucumber-demo-spring/flowable-cucumber-demo-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowable-cucumber-parent.iml" filepath="$PROJECT_DIR$/flowable-cucumber-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/flowable-cucumber-spring/flowable-cucumber-spring.iml" filepath="$PROJECT_DIR$/flowable-cucumber-spring/flowable-cucumber-spring.iml" />
     </modules>
   </component>

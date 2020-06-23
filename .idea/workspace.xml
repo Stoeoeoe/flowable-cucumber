@@ -1,169 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a18694a-afda-4e5e-9828-2104a283354a" name="Default Changelist" comment="Big update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_4_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java8_4_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java_4_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_junit_4_8_0.xml" afterDir="false" />
+    <list default="true" id="7f08b519-c37f-4b1c-9c94-da1379393258" name="Default Changelist" comment="- change project/module version to snapshot&#10;- add idea files and compiled code to gitignore&#10;- fix module names">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/flowable-cucumber-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flowable-cucumber-parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_spring_4_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_spring_4_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cucumber_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cucumber_spring_0_0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flowable-cucumber-parent.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_4_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_4_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_expressions_7_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java8_4_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java8_4_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java_4_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java_4_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_junit_4_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_junit_4_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_spring_4_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_1_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_dependencies_1_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_gherkin_5_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jodah_typetools_0_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_app_engine_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_app_engine_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_bpmn_converter_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_bpmn_model_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cmmn_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cmmn_converter_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cmmn_engine_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cmmn_engine_configurator_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cmmn_image_generator_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_cmmn_model_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_content_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_content_engine_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_dmn_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_dmn_engine_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_dmn_model_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_dmn_xml_converter_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_engine_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_engine_configurator_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_entitylink_service_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_entitylink_service_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_form_engine_configurator_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_identitylink_service_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_identitylink_service_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_idm_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_idm_engine_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_image_generator_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_job_service_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_job_service_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_process_validation_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_task_service_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_task_service_api_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_flowable_flowable_variable_service_6_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_3_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-cucumber-demo/flowable-cucumber-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/flowable-cucumber-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cucumber-test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flowable-cucumber-demo-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo-spring/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flowable-cucumber-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java/org/flowable/testing/bdd/example/GreetTaskMockDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java/org/flowable/testing/bdd/example/GreetTaskMockDelegate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-cucumber-spring/flowable-cucumber-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-spring/flowable-cucumber-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java/org/flowable/testing/demo/CucumberDemoTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java/org/flowable/testing/demo/CucumberDemoTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flowable-cucumber-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing/config/CucumberTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing/config/CucumberTestConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-cucumber/flowable-cucumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/flowable-cucumber.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flowable-cucumber/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/ProcessSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing/glue/ProcessSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open_points.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
+  <component name="ProjectId" id="1diV4dCbM5roQINkmcuT4eaIN85" />
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
-  <component name="ProjectId" id="1TbFbT3zfJFh3u5VzK0xzH8UfGS" />
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573716863625" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/flowable-cucumber" />
-      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/test" />
-      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/test/java" />
-      <recent name="$PROJECT_DIR$/src/test/resources/processes" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.flowable.testing" />
-      <recent name="com.flowable.testing.glue" />
-      <recent name="com.flowable.testing.steps" />
-      <recent name="com.flowable.testing.bdd" />
-      <recent name="com.flowable.testing.cucumbertest" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/test" />
-      <recent name="$PROJECT_DIR$/flowable-cucumber-demo/src/main/java/org/flowable/testing/demo" />
-      <recent name="$PROJECT_DIR$/flowable-cucumber/src/main/java/org/flowable/testing" />
-      <recent name="$PROJECT_DIR$/flowable-cucumber/src/main/java" />
-      <recent name="$PROJECT_DIR$/flowable-cucumber-spring/src/main/java/org/flowable/testing" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.flowable.testing.glue" />
-      <recent name="org.flowable.testing.demo" />
-      <recent name="com.flowable.testing.service" />
-      <recent name="com.flowable.testing" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.flowable.testing.config" />
-      <recent name="com.flowable.testing.util" />
-      <recent name="com.flowable.testing.steps" />
-      <recent name="com.flowable.testing.commons" />
-      <recent name="com.flowable.testing.service" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.CucumberFeatureRunner (1)">
-    <configuration name="Feature: greet-process" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/greet-process.feature" />
-      <option name="GLUE" value="cucumber.api.spring com.flowable.testing.steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="flowable-cucumber-parent" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: greet-process" />
+  <component name="RunManager" selected="JUnit.CucumberFeatureRunner">
+    <configuration name="CucumberDemoTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flowable-cucumber-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="org.flowable.testing.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.flowable.testing.demo" />
+      <option name="MAIN_CLASS_NAME" value="org.flowable.testing.demo.CucumberDemoTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CucumberFeatureRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flowable-cucumber-demo" />
+    <configuration name="CucumberFeatureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flowable-cucumber-demo-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.flowable.testing.*" />
@@ -177,60 +168,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CucumberFeatureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flowable-cucumber-parent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flowable.testing.glue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.flowable.testing" />
-      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.CucumberFeatureRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flowable-cucumber-parent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flowable.testing.bdd.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.flowable.testing" />
-      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.CucumberTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlowableBaseSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flowable-cucumber-parent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flowable.testing.glue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.flowable.testing.steps" />
-      <option name="MAIN_CLASS_NAME" value="com.flowable.testing.steps.FlowableBaseSteps" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CucumberTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="flowable-cucumber-parent" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flowable.testing.FlowableCucumberDemoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="mvn build parent" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="FlowableCucumberDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="flowable-cucumber-demo" />
+      <module name="flowable-cucumber-demo-spring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.flowable.testing.demo.FlowableCucumberDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,11 +203,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CucumberFeatureRunner (1)" />
         <item itemvalue="JUnit.CucumberFeatureRunner" />
-        <item itemvalue="JUnit.FlowableBaseSteps" />
-        <item itemvalue="JUnit.CucumberTest" />
-        <item itemvalue="Cucumber java.Feature: greet-process" />
+        <item itemvalue="JUnit.CucumberDemoTestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -251,110 +213,42 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a18694a-afda-4e5e-9828-2104a283354a" name="Default Changelist" comment="" />
-      <created>1555609364893</created>
+      <changelist id="7f08b519-c37f-4b1c-9c94-da1379393258" name="Default Changelist" comment="" />
+      <created>1592907710887</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555609364893</updated>
-      <workItem from="1555609366411" duration="34360000" />
-      <workItem from="1557496903339" duration="5224000" />
-      <workItem from="1557779171451" duration="594000" />
-      <workItem from="1564583322917" duration="5003000" />
-      <workItem from="1568008366922" duration="2887000" />
-      <workItem from="1568270223900" duration="3629000" />
-      <workItem from="1572349732293" duration="2173000" />
-      <workItem from="1573132929222" duration="52000" />
-      <workItem from="1573644874954" duration="10155000" />
-      <workItem from="1573663541181" duration="2719000" />
-      <workItem from="1573717017534" duration="1625000" />
-      <workItem from="1573720962031" duration="34004000" />
-      <workItem from="1574253324428" duration="73653000" />
-      <workItem from="1574753199627" duration="5683000" />
-      <workItem from="1574761785285" duration="24063000" />
-      <workItem from="1575013769064" duration="5526000" />
-      <workItem from="1575046039303" duration="671000" />
-      <workItem from="1575278292483" duration="3629000" />
-      <workItem from="1575308507488" duration="258000" />
-      <workItem from="1575356235557" duration="8064000" />
-      <workItem from="1575528065772" duration="1462000" />
-      <workItem from="1575548276015" duration="660000" />
-      <workItem from="1575877184373" duration="2871000" />
-      <workItem from="1578298562521" duration="1071000" />
-      <workItem from="1580824022224" duration="1219000" />
+      <updated>1592907710887</updated>
+      <workItem from="1592907713254" duration="807000" />
     </task>
-    <task id="LOCAL-00001">
-      <created>1568270486505</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1568270486505</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5-sources.jar!/cucumber/runtime/table/TableConverter.java</url>
-          <line>236</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/lang/ClassLoader.java</url>
-          <line>1306</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-spring/4.8.0/cucumber-spring-4.8.0.jar!/io/cucumber/spring/SpringFactory.class</url>
-          <line>51</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.8.0/cucumber-core-4.8.0.jar!/cucumber/runtime/formatter/PluginFactory.class</url>
-          <line>169</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/test/mock/MockElResolver.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/test/mock/MockExpressionManager.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.4.1/flowable-engine-6.4.1-sources.jar!/org/flowable/engine/impl/bpmn/behavior/ServiceTaskDelegateExpressionActivityBehavior.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="187" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flowable_cucumber$CucumberFeatureRunner.ic" NAME="CucumberFeatureRunner Coverage Results" MODIFIED="1574697944039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.flowable.testing.glue.*</FILTER>
-    </SUITE>
+  <component name="WindowStateProjectService">
+    <state x="568" y="100" key="#Unnamed" timestamp="1592908107502">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="568" y="100" key="#Unnamed/0.0.1920.1050@0.0.1920.1050" timestamp="1592908107502" />
+    <state x="437" y="112" key="CommitChangelistDialog2" timestamp="1592907859023">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="437" y="112" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592907859023" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1592908515600">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592908515600" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1592908515599">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592908515599" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1592908515599">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592908515599" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1592908515599">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592908515599" />
   </component>
 </project>

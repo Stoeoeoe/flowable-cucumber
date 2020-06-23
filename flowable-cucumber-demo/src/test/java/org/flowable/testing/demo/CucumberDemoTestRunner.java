@@ -10,5 +10,6 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         snippets = CucumberOptions.SnippetType.UNDERSCORE,
         glue = {"org.flowable.testing.glue"}
-)public class CucumberDemoTestRunner {
+)
+public class CucumberDemoTestRunner {
 }
