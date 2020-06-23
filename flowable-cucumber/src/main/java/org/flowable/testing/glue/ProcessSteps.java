@@ -16,12 +16,10 @@ import org.flowable.engine.runtime.Execution;
 import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.form.api.FormRepositoryService;
 import org.flowable.job.api.Job;
-import org.flowable.testing.service.CucumberCaseTestService;
 import org.flowable.testing.service.CucumberProcessTestService;
 import org.flowable.testing.service.FlowableServices;
 import org.flowable.testing.util.CucumberVariableUtils;
 import org.flowable.variable.api.history.HistoricVariableInstance;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 
 import java.math.BigInteger;
@@ -33,7 +31,6 @@ import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import static java.time.temporal.ChronoUnit.*;
@@ -157,7 +154,7 @@ public class ProcessSteps {
 
 
     @Then("the process is completed")
-    public void theProcessIsCompleted() throws Throwable {
+    public void theProcessIsCompleted() {
         long completedProcesses = historyService.createHistoricProcessInstanceQuery()
                 .processInstanceId(cucumberProcessTestService.getProcessInstanceId())
                 .finished()
@@ -168,7 +165,7 @@ public class ProcessSteps {
     }
 
     @Then("the process is not yet completed")
-    public void theProcessIsNotYetCompleted() throws Throwable {
+    public void theProcessIsNotYetCompleted() {
         long completedProcesses = historyService.createHistoricProcessInstanceQuery()
                 .processInstanceId(cucumberProcessTestService.getProcessInstanceId())
                 .finished()
@@ -190,7 +187,7 @@ public class ProcessSteps {
 
 
     @Then("there are {biginteger} active instances with the ID {string}")
-    public void thereAreActiveInstancesWithTheId(long count, String activityId) throws Throwable {
+    public void thereAreActiveInstancesWithTheId(long count, String activityId) {
         long actualCount = runtimeService.createActivityInstanceQuery()
             .processInstanceId(cucumberProcessTestService.getProcessInstanceId())
             .activityId(activityId)
@@ -298,6 +295,7 @@ public class ProcessSteps {
         triggerActivity(activityName, DataTable.emptyDataTable(), false);
     }
 
+    // TODO: Fix
     @When("the activity {string} is triggered asynchronously")
     public void theActivityIsTriggeredAsynchronously(String activityName) {
         triggerActivity(activityName, DataTable.emptyDataTable(), true);
@@ -439,5 +437,12 @@ public class ProcessSteps {
         if(count != numberOfProcesses) {
             throw new RuntimeException("There are " + count + " running processes.");
         }
+    }
+
+
+    @When("the process variables are changed to:")
+    public void theProcessVariablesAreChangedTo(DataTable variables) {
+        Map<String, Object> variableMap = CucumberVariableUtils.getMapFromDataTable(variables);
+        runtimeService.setVariables(cucumberProcessTestService.getProcessInstanceId(), variableMap);
     }
 }

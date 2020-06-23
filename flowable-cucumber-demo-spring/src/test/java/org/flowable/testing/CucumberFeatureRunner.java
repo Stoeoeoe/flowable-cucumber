@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
     features = "classpath:features/",
     plugin = {"pretty"},
     snippets = CucumberOptions.SnippetType.UNDERSCORE,
-    glue = {"org.flowable.testing.org.flowable.testing.glue"}
+    glue = {"org.flowable.testing.glue"}
 )
 public class CucumberFeatureRunner {
 

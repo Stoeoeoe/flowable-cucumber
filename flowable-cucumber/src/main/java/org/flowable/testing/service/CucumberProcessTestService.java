@@ -66,9 +66,8 @@ public class CucumberProcessTestService {
         return definition;
     }
 
-    // TODO: Is this needed? Probably can use the process instance directly
     public String getProcessExecutionId() {
-        return runtimeService.createExecutionQuery().processInstanceId(getProcessInstanceId()).onlyProcessInstanceExecutions().singleResult().getId();
+        return processInstance.getId();
     }
 
     public List<String> getAllExecutionIds() {

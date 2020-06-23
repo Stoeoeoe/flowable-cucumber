@@ -15,6 +15,10 @@ public class CucumberCaseTestService {
         return caseInstance;
     }
 
+    public String getCaseInstanceId() {
+        return caseInstance.getId();
+    }
+
     public void setCaseInstance(CaseInstance caseInstance) {
         this.caseInstance = caseInstance;
     }

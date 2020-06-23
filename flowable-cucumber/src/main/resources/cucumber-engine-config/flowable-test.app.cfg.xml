@@ -20,6 +20,10 @@
                 <bean class="org.flowable.form.engine.configurator.FormEngineConfigurator"/>
             </list>
         </property>
+
+        <property name="expressionManager">
+            <bean class="org.flowable.engine.test.mock.MockExpressionManager"/>
+        </property>
     </bean>
 
 </beans>

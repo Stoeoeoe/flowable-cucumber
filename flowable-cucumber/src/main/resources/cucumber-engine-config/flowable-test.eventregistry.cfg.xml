@@ -11,5 +11,9 @@
         <property name="jdbcPassword" value="" />
 
         <property name="databaseSchemaUpdate" value="true" />
+
+        <property name="expressionManager">
+            <bean class="org.flowable.engine.test.mock.MockExpressionManager"/>
+        </property>
     </bean>
 </beans>

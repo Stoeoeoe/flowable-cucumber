@@ -9,4 +9,3 @@ Feature: App works as expected
   Scenario: Case and process can be started
     Given the app 'apps/simple_app.bar' is deployed
     Then the process 'app_process' can be started by 'admin'
-    Then the process 'hello_process' cannot be started by 'admin'

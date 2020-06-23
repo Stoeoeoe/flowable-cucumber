@@ -24,7 +24,7 @@
         <!-- Flowable Dependencies -->
         <dependency>
             <groupId>org.flowable</groupId>
-            <artifactId>flowable-app-engine</artifactId>
+            <artifactId>flowable-engine</artifactId>
             <version>6.5.0</version>
         </dependency>
         <dependency>
@@ -58,6 +58,7 @@
             <groupId>org.flowable.testing</groupId>
             <artifactId>flowable-cucumber</artifactId>
             <version>0.0.1</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- Test Dependencies -->
@@ -71,6 +72,7 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.3.2</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- Cucumber Dependencies -->
@@ -84,6 +86,7 @@
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
             <version>4.2.3</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

@@ -8,10 +8,8 @@ import org.flowable.cmmn.api.repository.CmmnDeployment;
 import org.flowable.common.engine.impl.el.ExpressionManager;
 import org.flowable.dmn.api.DmnDeployment;
 import org.flowable.engine.history.HistoricProcessInstance;
-import org.flowable.engine.impl.cfg.ProcessEngineConfigurationImpl;
 import org.flowable.engine.impl.test.JobTestHelper;
 import org.flowable.engine.repository.Deployment;
-import org.flowable.engine.test.mock.MockExpressionManager;
 import org.flowable.engine.test.mock.Mocks;
 import org.flowable.form.api.FormDeployment;
 import org.flowable.idm.api.Group;
@@ -88,11 +86,16 @@ public class Hooks {
         flw.getFormRepositoryService().createDeploymentQuery().list().stream().map(FormDeployment::getId).forEach(id -> flw.getFormRepositoryService().deleteDeployment(id));
     }
 
-    // TODO: This doesn't work :)
+    // TODO: Other Engines
+    // TODO: This doesn't work
     @Before(value = "@Mock", order = 50)
     public void useMockExpressionManager() {
+        /*
+        originalExpressionManager = ((ProcessEngineConfigurationImpl)flw.getProcessEngineConfiguration()).getExpressionManager();
+        Mocks.reset();
         MockExpressionManager mockExpressionManager = new MockExpressionManager();
         ((ProcessEngineConfigurationImpl)flw.getProcessEngine().getProcessEngineConfiguration()).setExpressionManager(mockExpressionManager);
+         */
     }
 
 
@@ -105,7 +108,7 @@ public class Hooks {
 
     @After(value = "@Mock", order = 10)
     public void resetExpressionManager() {
-        ((ProcessEngineConfigurationImpl)flw.getProcessEngineConfiguration()).setExpressionManager(originalExpressionManager);
+     //   ((ProcessEngineConfigurationImpl)flw.getProcessEngineConfiguration()).setExpressionManager(originalExpressionManager);
         Mocks.reset();
     }
 

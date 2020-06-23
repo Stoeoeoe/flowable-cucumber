@@ -1,8 +1,10 @@
 package org.flowable.testing.glue;
 
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
 
+import io.cucumber.datatable.DataTable;
 import org.flowable.cmmn.api.CmmnHistoryService;
 import org.flowable.cmmn.api.CmmnRepositoryService;
 import org.flowable.cmmn.api.CmmnRuntimeService;
@@ -16,6 +18,7 @@ import org.flowable.common.engine.api.FlowableException;
 import org.flowable.engine.IdentityService;
 import org.flowable.identitylink.api.IdentityLinkType;
 import org.flowable.testing.service.FlowableServices;
+import org.flowable.testing.util.CucumberVariableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.flowable.testing.service.CucumberCaseTestService;
@@ -109,7 +112,7 @@ public class CaseSteps {
             .caseDefinitionKey(caseDefinitionKey)
             .singleResult();
         CmmnModel cmmnModel = cmmnRepositoryService.getCmmnModel(caseDefinition.getId());
-
+        // TODO: Implement
 
     }
 
@@ -122,4 +125,11 @@ public class CaseSteps {
                 .getId();
         cmmnTaskService.complete(taskId);
     }
+
+    @When("the case variables are changed to:")
+    public void theFCaseVariablesAreChangedTo(DataTable variables) {
+        Map<String, Object> variableMap = CucumberVariableUtils.getMapFromDataTable(variables);
+        cmmnRuntimeService.setVariables(cucumberCaseTestService.getCaseInstanceId(), variableMap);
+    }
+
 }
