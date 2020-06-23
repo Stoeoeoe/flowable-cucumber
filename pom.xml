@@ -37,6 +37,27 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.flowable.testing</groupId>
+                <artifactId>flowable-cucumber</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flowable.testing</groupId>
+                <artifactId>flowable-cucumber-demo</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flowable.testing</groupId>
+                <artifactId>flowable-cucumber-spring</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flowable.testing</groupId>
+                <artifactId>flowable-cucumber-demo-spring</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
