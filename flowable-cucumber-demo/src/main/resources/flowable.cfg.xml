@@ -2,19 +2,109 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="processEngineConfiguration" class="org.flowable.engine.impl.cfg.StandaloneProcessEngineConfiguration">
 
-        <property name="jdbcUrl" value="jdbc:h2:mem:flowable;DB_CLOSE_DELAY=1000" />
-        <property name="jdbcDriver" value="org.h2.Driver" />
-        <property name="jdbcUsername" value="sa" />
-        <property name="jdbcPassword" value="" />
-
+    <bean id="appEngineConfiguration" class="org.flowable.app.engine.AppEngineConfiguration">
+        <property name="jdbcUrl" value="${jdbc.url:jdbc:h2:mem:flowable;DB_CLOSE_DELAY=1000}" />
+        <property name="jdbcDriver" value="${jdbc.driver:org.h2.Driver}" />
+        <property name="jdbcUsername" value="${jdbc.username:sa}" />
+        <property name="jdbcPassword" value="${jdbc.password:}" />
         <property name="databaseSchemaUpdate" value="true" />
 
-        <property name="asyncExecutorActivate" value="true" />
+        <property name="configurators">
+            <list>
+                <bean class="org.flowable.engine.configurator.ProcessEngineConfigurator">
+                    <property name="processEngineConfiguration" ref="processEngineConfiguration" />
+                </bean>
+                <bean class="org.flowable.cmmn.engine.configurator.CmmnEngineConfigurator">
+                    <property name="cmmnEngineConfiguration" ref="cmmnEngineConfiguration" />
+                </bean>
+                <bean class="org.flowable.content.engine.configurator.ContentEngineConfigurator">
+                    <property name="contentEngineConfiguration" ref="contentEngineConfiguration" />
+                </bean>
+                <bean class="org.flowable.dmn.engine.configurator.DmnEngineConfigurator">
+                    <property name="dmnEngineConfiguration" ref="dmnEngineConfiguration" />
+                </bean>
+                <bean class="org.flowable.eventregistry.impl.configurator.EventRegistryEngineConfigurator">
+                    <property name="eventEngineConfiguration" ref="eventRegistryEngineConfiguration" />
+                </bean>
+                <bean class="org.flowable.form.engine.configurator.FormEngineConfigurator">
+                    <property name="formEngineConfiguration" ref="formEngineConfiguration" />
+                </bean>
+            </list>
+        </property>
+
+        <property name="idmEngineConfigurator">
+            <bean class="org.flowable.idm.engine.configurator.IdmEngineConfigurator">
+                <property name="idmEngineConfiguration" ref="idmEngineConfiguration" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="processEngineConfiguration" class="org.flowable.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+
+        <property name="asyncExecutor" ref="processAsyncExecutor" />
+        <property name="asyncExecutorActivate" value="false" />
+
+        <property name="asyncFailedJobWaitTime" value="1" />
+
+        <property name="enableEntityLinks" value="true" />
+        <property name="enableProcessDefinitionInfoCache" value="true" />
+
+        <!-- Disabled event registry and IDM because they are configured by the lead (App) engine -->
+        <property name="disableEventRegistry" value="true" />
+        <property name="disableIdmEngine" value="true" />
 
         <property name="mailServerHost" value="mail.my-corp.com" />
         <property name="mailServerPort" value="5025" />
+    </bean>
+
+    <bean id="cmmnEngineConfiguration" class="org.flowable.cmmn.engine.CmmnEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+
+        <property name="asyncExecutor" ref="asyncExecutor" />
+        <property name="asyncExecutorActivate" value="false" />
+
+        <property name="asyncFailedJobWaitTime" value="1" />
+
+        <property name="enableEntityLinks" value="true" />
+
+        <!-- Disabled event registry and IDM because they are configured by the lead (App) engine -->
+        <property name="disableEventRegistry" value="true" />
+        <property name="disableIdmEngine" value="true" />
+
+        <property name="formFieldValidationEnabled" value="true"/>
+        <property name="enableHistoricTaskLogging" value="true"/>
+    </bean>
+
+    <bean id="contentEngineConfiguration" class="org.flowable.content.engine.ContentEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+    <bean id="dmnEngineConfiguration" class="org.flowable.dmn.engine.DmnEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+    <bean id="eventRegistryEngineConfiguration" class="org.flowable.eventregistry.impl.EventRegistryEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+    <bean id="formEngineConfiguration" class="org.flowable.form.engine.FormEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+    <bean id="idmEngineConfiguration" class="org.flowable.idm.engine.IdmEngineConfiguration">
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+    <bean id="processAsyncExecutor" class="org.flowable.job.service.impl.asyncexecutor.DefaultAsyncJobExecutor">
+        <property name="defaultAsyncJobAcquireWaitTimeInMillis" value="1000" />
+        <property name="defaultTimerJobAcquireWaitTimeInMillis" value="1000" />
+    </bean>
+
+    <bean id="asyncExecutor" class="org.flowable.job.service.impl.asyncexecutor.DefaultAsyncJobExecutor">
+        <property name="defaultAsyncJobAcquireWaitTimeInMillis" value="1000" />
+        <property name="defaultTimerJobAcquireWaitTimeInMillis" value="1000" />
     </bean>
 
 </beans>

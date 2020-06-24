@@ -17,7 +17,7 @@
         <!-- Flowable Dependencies -->
         <dependency>
             <groupId>org.flowable</groupId>
-            <artifactId>flowable-engine</artifactId>
+            <artifactId>flowable-engine-configurator</artifactId>
             <version>${flowable.version}</version>
         </dependency>
         <dependency>
@@ -27,22 +27,22 @@
         </dependency>
         <dependency>
             <groupId>org.flowable</groupId>
-            <artifactId>flowable-cmmn-engine</artifactId>
+            <artifactId>flowable-cmmn-engine-configurator</artifactId>
             <version>${flowable.version}</version>
         </dependency>
         <dependency>
             <groupId>org.flowable</groupId>
-            <artifactId>flowable-dmn-engine</artifactId>
+            <artifactId>flowable-dmn-engine-configurator</artifactId>
             <version>${flowable.version}</version>
         </dependency>
         <dependency>
             <groupId>org.flowable</groupId>
-            <artifactId>flowable-form-engine</artifactId>
+            <artifactId>flowable-form-engine-configurator</artifactId>
             <version>${flowable.version}</version>
         </dependency>
         <dependency>
             <groupId>org.flowable</groupId>
-            <artifactId>flowable-content-engine</artifactId>
+            <artifactId>flowable-content-engine-configurator</artifactId>
             <version>${flowable.version}</version>
         </dependency>
 

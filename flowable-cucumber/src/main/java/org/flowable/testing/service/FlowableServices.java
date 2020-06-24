@@ -7,18 +7,23 @@ import org.flowable.app.engine.AppEngineConfiguration;
 import org.flowable.cmmn.api.*;
 import org.flowable.cmmn.engine.CmmnEngine;
 import org.flowable.cmmn.engine.CmmnEngineConfiguration;
+import org.flowable.cmmn.engine.CmmnEngines;
 import org.flowable.dmn.api.DmnHistoryService;
 import org.flowable.dmn.api.DmnManagementService;
 import org.flowable.dmn.api.DmnRepositoryService;
 import org.flowable.dmn.api.DmnRuleService;
 import org.flowable.dmn.engine.DmnEngine;
 import org.flowable.dmn.engine.DmnEngineConfiguration;
+import org.flowable.dmn.engine.DmnEngines;
 import org.flowable.engine.*;
+import org.flowable.engine.impl.cfg.ProcessEngineConfigurationImpl;
+import org.flowable.engine.test.mock.MockExpressionManager;
 import org.flowable.form.api.FormManagementService;
 import org.flowable.form.api.FormRepositoryService;
 import org.flowable.form.api.FormService;
 import org.flowable.form.engine.FormEngine;
 import org.flowable.form.engine.FormEngineConfiguration;
+import org.flowable.form.engine.FormEngines;
 
 public class FlowableServices {
 
@@ -62,14 +67,18 @@ public class FlowableServices {
 
 
     public FlowableServices() {
-        ProcessEngineConfiguration processEngineConfiguration = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("cucumber-engine-config/flowable-test.cfg.xml");
-        CmmnEngineConfiguration cmmnEngineConfiguration  = CmmnEngineConfiguration.createCmmnEngineConfigurationFromResource("cucumber-engine-config/flowable-test.cmmn.cfg.xml");
-        DmnEngineConfiguration dmnEngineConfiguration  = DmnEngineConfiguration.createDmnEngineConfigurationFromResource("cucumber-engine-config/flowable-test.dmn.cfg.xml");
-        AppEngineConfiguration appEngineConfiguration = AppEngineConfiguration.createAppEngineConfigurationFromResource("cucumber-engine-config/flowable-test.app.cfg.xml");
-        FormEngineConfiguration formEngineConfiguration = FormEngineConfiguration.createFormEngineConfigurationFromResource("cucumber-engine-config/flowable-test.form.cfg.xml");
+        this.appEngineConfiguration = AppEngineConfiguration.createAppEngineConfigurationFromResource("flowable.cfg.xml");
 
-        this.processEngine = processEngineConfiguration.buildProcessEngine();
-        this.processEngineConfiguration = processEngineConfiguration;
+        appEngineConfiguration.setExpressionManager(new MockExpressionManager());
+
+        // The lead engine will build all other engines
+        this.appEngine = appEngineConfiguration.buildAppEngine();
+        this.appRepositoryService = appEngine.getAppRepositoryService();
+        this.appManagementService = appEngine.getAppManagementService();
+
+        this.processEngine = ProcessEngines.getDefaultProcessEngine();
+        this.processEngineConfiguration = this.processEngine.getProcessEngineConfiguration();
+        ((ProcessEngineConfigurationImpl) this.processEngineConfiguration).setExpressionManager(new MockExpressionManager());
         this.runtimeService = processEngine.getRuntimeService();
         this.taskService = processEngine.getTaskService();
         this.repositoryService = processEngine.getRepositoryService();
@@ -78,28 +87,26 @@ public class FlowableServices {
         this.processMigrationService = processEngine.getProcessMigrationService();
         this.identityService = processEngine.getIdentityService();
 
-        this.cmmnEngine = cmmnEngineConfiguration.buildCmmnEngine();
-        this.cmmnEngineConfiguration = cmmnEngineConfiguration;
+        this.cmmnEngine = CmmnEngines.getDefaultCmmnEngine();
+        this.cmmnEngineConfiguration = this.cmmnEngine.getCmmnEngineConfiguration();
+        this.cmmnEngineConfiguration.setExpressionManager(new MockExpressionManager());
         this.cmmnRuntimeService = cmmnEngine.getCmmnRuntimeService();
         this.cmmnTaskService = cmmnEngine.getCmmnTaskService();
         this.cmmnRepositoryService = cmmnEngine.getCmmnRepositoryService();
         this.cmmnHistoryService = cmmnEngine.getCmmnHistoryService();
         this.cmmnManagementService = cmmnEngine.getCmmnManagementService();
 
-      this.dmnEngine = dmnEngineConfiguration.buildDmnEngine();
-        this.dmnEngineConfiguration = dmnEngineConfiguration;
+        this.dmnEngine = DmnEngines.getDefaultDmnEngine();
+        this.dmnEngineConfiguration = this.dmnEngine.getDmnEngineConfiguration();
+        this.dmnEngineConfiguration.setExpressionManager(new MockExpressionManager());
         this.dmnRepositoryService = dmnEngine.getDmnRepositoryService();
         this.dmnRuleService = dmnEngine.getDmnRuleService();
         this.dmnHistoryService = dmnEngine.getDmnHistoryService();
         this.dmnManagementService = dmnEngine.getDmnManagementService();
 
-        this.appEngine = appEngineConfiguration.buildAppEngine();
-        this.appEngineConfiguration = appEngineConfiguration;
-        this.appRepositoryService = appEngine.getAppRepositoryService();
-        this.appManagementService = appEngine.getAppManagementService();
-
-        this.formEngine = formEngineConfiguration.buildFormEngine();
-        this.formEngineConfiguration = formEngineConfiguration;
+        this.formEngine = FormEngines.getDefaultFormEngine();
+        this.formEngineConfiguration = this.formEngine.getFormEngineConfiguration();
+        this.formEngineConfiguration.setExpressionManager(new MockExpressionManager());
         this.formRepositoryService = formEngine.getFormRepositoryService();
         this.formService = formEngine.getFormService();
         this.formManagementService = formEngine.getFormManagementService();
