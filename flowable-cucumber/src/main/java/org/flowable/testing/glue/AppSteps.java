@@ -1,10 +1,13 @@
 package org.flowable.testing.glue;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.ZipInputStream;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Then;
 import org.flowable.app.api.AppRepositoryService;
 import org.flowable.app.api.repository.AppDeployment;
@@ -24,6 +27,7 @@ public class AppSteps {
 
     private final AppRepositoryService appRepositoryService;
     private final CucumberProcessTestService cucumberProcessTestService;
+    private final Collection<String> createdDeployments = new HashSet<>();
 
     public AppSteps(FlowableServices flowableServices, CucumberProcessTestService cucumberProcessTestService) {
         this.appRepositoryService = flowableServices.getAppRepositoryService();
@@ -43,9 +47,18 @@ public class AppSteps {
             AppDeployment appDeployment = appRepositoryService.createDeployment()
                 .addZipInputStream(zis)
                 .deploy();
+            createdDeployments.add(appDeployment.getId());
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Could not load app '" + appResource + "'");
         }
     };
+
+    @After
+    public void deleteDeployments() {
+        for (String deployment : createdDeployments) {
+            appRepositoryService.deleteDeployment(deployment, true);
+        }
+
+    }
 
 }

@@ -1,7 +1,10 @@
 package org.flowable.testing.glue;
 
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 
+import io.cucumber.java.After;
 import org.flowable.engine.IdentityService;
 import org.flowable.idm.api.Group;
 import org.flowable.idm.api.User;
@@ -12,6 +15,8 @@ import org.flowable.testing.service.FlowableServices;
 public class IdentitySteps {
 
     private final IdentityService identityService;
+    private final Collection<String> createdUsers = new HashSet<>();
+    private final Collection<String> createdGroups = new HashSet<>();
 
     public IdentitySteps(FlowableServices flowableServices) {
         this.identityService = flowableServices.getIdentityService();
@@ -22,12 +27,14 @@ public class IdentitySteps {
     public void aUserWithTheIdExists(String userId) {
         User user = identityService.newUser(userId);
         identityService.saveUser(user);
+        createdUsers.add(userId);
     }
 
     @Given("a group with the id {string} exists")
     public void aGroupWithTheIdExists(String groupId) {
         Group group = identityService.newGroup(groupId);
         identityService.saveGroup(group);
+        createdGroups.add(groupId);
     }
 
     @Given("the user {string} is a member of the group {string}")
@@ -54,5 +61,11 @@ public class IdentitySteps {
         for (String groupId : groupIds) {
             aUserBelongsToTheGroup(userId, groupId);
         }
+    }
+
+    @After
+    public void deleteCreatedUsersAndGroups() {
+        createdUsers.forEach(identityService::deleteUser);
+        createdGroups.forEach(identityService::deleteGroup);
     }
 }

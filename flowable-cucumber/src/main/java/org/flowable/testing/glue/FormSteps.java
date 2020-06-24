@@ -1,7 +1,10 @@
 package org.flowable.testing.glue;
 
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.logging.Logger;
 
+import io.cucumber.java.After;
 import org.flowable.form.api.FormDeployment;
 import org.flowable.form.api.FormRepositoryService;
 import org.flowable.form.api.FormService;
@@ -15,6 +18,8 @@ public class FormSteps {
     private FormRepositoryService formRepositoryService;
     private FormService formService;
 
+    private final Collection<String> createdDeployments = new HashSet<>();
+
 
     public FormSteps(FlowableServices flowableServices) {
         this.formService = flowableServices.getFormService();
@@ -27,5 +32,15 @@ public class FormSteps {
         FormDeployment deployment = this.formRepositoryService.createDeployment()
                 .addClasspathResource(formResource)
                 .deploy();
+
+        createdDeployments.add(deployment.getId());
+    }
+
+    @After
+    public void deleteDeployments() {
+        for (String deployment : createdDeployments) {
+            formRepositoryService.deleteDeployment(deployment);
+        }
+
     }
 }

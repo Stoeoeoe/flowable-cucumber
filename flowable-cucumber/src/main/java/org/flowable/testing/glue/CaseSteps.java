@@ -1,10 +1,13 @@
 package org.flowable.testing.glue;
 
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
 import org.flowable.cmmn.api.CmmnHistoryService;
 import org.flowable.cmmn.api.CmmnRepositoryService;
 import org.flowable.cmmn.api.CmmnRuntimeService;
@@ -37,6 +40,8 @@ public class CaseSteps {
 
     private final CucumberCaseTestService cucumberCaseTestService;
 
+    private final Collection<String> createdDeployments = new HashSet<>();
+
     public CaseSteps(FlowableServices flowableServices, CucumberCaseTestService cucumberCaseTestService) {
         this.cucumberCaseTestService = cucumberCaseTestService;
 
@@ -53,6 +58,8 @@ public class CaseSteps {
         CmmnDeployment deployment = cmmnRepositoryService.createDeployment()
                 .addClasspathResource(caseResource)
                 .deploy();
+
+        createdDeployments.add(deployment.getId());
         CaseDefinition caseDefinition = cmmnRepositoryService.createCaseDefinitionQuery().deploymentId(deployment.getId()).singleResult();
         cucumberCaseTestService.setCaseDefinition(caseDefinition);
 
@@ -130,6 +137,13 @@ public class CaseSteps {
     public void theFCaseVariablesAreChangedTo(DataTable variables) {
         Map<String, Object> variableMap = CucumberVariableUtils.getMapFromDataTable(variables);
         cmmnRuntimeService.setVariables(cucumberCaseTestService.getCaseInstanceId(), variableMap);
+    }
+
+    @After
+    public void deleteDeployments() {
+        for (String deployment : createdDeployments) {
+            cmmnRepositoryService.deleteDeployment(deployment, true);
+        }
     }
 
 }

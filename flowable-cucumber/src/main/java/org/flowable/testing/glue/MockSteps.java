@@ -1,6 +1,7 @@
 package org.flowable.testing.glue;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
 import io.cucumber.java.en.When;
 import org.flowable.cmmn.api.CmmnRuntimeService;
 import org.flowable.engine.RuntimeService;
@@ -58,6 +59,11 @@ public class MockSteps {
     public void theServiceTaskWithTheKeyIsIgnored(String activityId, DataTable variables) {
         Map<String, Object> variableMap = CucumberVariableUtils.getMapFromDataTable(variables);
         String processInstanceId = cucumberProcessTestService.getProcessInstanceId();
+    }
+
+    @After
+    public void resetMocks() {
+        Mocks.reset();
     }
 
 }

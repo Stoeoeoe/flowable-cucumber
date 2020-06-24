@@ -1,6 +1,7 @@
 package org.flowable.testing.glue;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -28,7 +29,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
+import java.util.Collection;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -50,6 +53,8 @@ public class ProcessSteps {
     private final ProcessEngineConfiguration processEngineConfiguration;
     private final ManagementService managementService;
     private final ProcessMigrationService processMigrationService;
+
+    private final Collection<String> createdDeployments = new HashSet<>();
 
     public ProcessSteps(FlowableServices flowableServices, CucumberProcessTestService cucumberProcessTestService) {
         this.cucumberProcessTestService = cucumberProcessTestService;
@@ -79,6 +84,8 @@ public class ProcessSteps {
         Deployment deployment = repositoryService.createDeployment()
             .addClasspathResource(processResource)
             .deploy();
+
+        createdDeployments.add(deployment.getId());
         ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().deploymentId(deployment.getId()).singleResult();
 
         if(!cucumberProcessTestService.hasDefinition(ENGINE_PROCESS, processDefinition.getKey())) {
@@ -444,5 +451,13 @@ public class ProcessSteps {
     public void theProcessVariablesAreChangedTo(DataTable variables) {
         Map<String, Object> variableMap = CucumberVariableUtils.getMapFromDataTable(variables);
         runtimeService.setVariables(cucumberProcessTestService.getProcessInstanceId(), variableMap);
+    }
+
+    @After
+    public void deleteDeployments() {
+        for (String deployment : createdDeployments) {
+            repositoryService.deleteDeployment(deployment, true);
+        }
+
     }
 }

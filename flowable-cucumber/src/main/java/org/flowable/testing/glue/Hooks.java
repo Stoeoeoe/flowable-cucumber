@@ -48,44 +48,6 @@ public class Hooks {
     }
      */
 
-    @Before(order = 10)
-    public void resetMocks() {
-        Mocks.reset();
-    }
-
-    @Before(order = 20)
-    public void deleteAllIdentityInformation() {
-        List<User> users = flw.getIdentityService().createUserQuery().list();
-        for (User user : users) {
-            flw.getIdentityService().deleteUser(user.getId());
-        }
-
-        List<Group> groups = flw.getIdentityService().createGroupQuery().list();
-        for (Group group : groups) {
-            flw.getIdentityService().deleteGroup(group.getId());
-        }
-    }
-
-
-    @Before(order = 30)
-    public void deleteHistory() {
-        List<HistoricProcessInstance> historicProcessInstances = flw.getHistoryService().createHistoricProcessInstanceQuery().finished().list();
-        for (HistoricProcessInstance historicProcessInstance : historicProcessInstances) {
-            flw.getHistoryService().deleteHistoricProcessInstance(historicProcessInstance.getId());
-        }
-        // TODO: Use new history cleaner in 6.5
-    }
-
-
-    @Before(order = 40)
-    public void deleteAllDeployments() {
-        flw.getAppRepositoryService().createDeploymentQuery().list().stream().map(AppDeployment::getId).forEach(id -> flw.getAppRepositoryService().deleteDeployment(id, true));
-        flw.getRepositoryService().createDeploymentQuery().list().stream().map(Deployment::getId).forEach(id -> flw.getRepositoryService().deleteDeployment(id, true));
-        flw.getCmmnRepositoryService().createDeploymentQuery().list().stream().map(CmmnDeployment::getId).forEach(id -> flw.getCmmnRepositoryService().deleteDeployment(id, true));
-        flw.getDmnRepositoryService().createDeploymentQuery().list().stream().map(DmnDeployment::getId).forEach(id -> flw.getDmnRepositoryService().deleteDeployment(id));
-        flw.getFormRepositoryService().createDeploymentQuery().list().stream().map(FormDeployment::getId).forEach(id -> flw.getFormRepositoryService().deleteDeployment(id));
-    }
-
     // TODO: Other Engines
     // TODO: This doesn't work
     @Before(value = "@Mock", order = 50)
